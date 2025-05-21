@@ -1,4 +1,4 @@
-// Back to Top Button
+// Back to Top
 const backToTopBtn = document.getElementById("backToTop");
 
 window.onscroll = function () {
@@ -19,7 +19,7 @@ backToTopBtn.addEventListener("click", function () {
   });
 });
 
-// Navbar active state
+// Navbar active
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -41,7 +41,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Smooth Scrolling
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -57,7 +57,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
 
-    // Close mobile menu after click
     const navbarCollapse = document.querySelector(".navbar-collapse");
     if (navbarCollapse.classList.contains("show")) {
       navbarCollapse.classList.remove("show");
